@@ -1,0 +1,138 @@
+@font-face {
+    font-family: redressed;
+    src: url(../assets/font/Redressed-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: after;
+    src: url(../assets/font/aftersick.otf);
+}
+
+body{
+    background-color: #eeeeee;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.menu_bar{
+    width: 100%;
+    height: 40px;
+    background-color: #F5F5F7;
+}
+h1{
+    color: #d6ad60;
+    font-family: redressed;
+    font-size: 2em;
+    margin-top: 0;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+.menu_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -25px;
+    gap: 20px;
+}
+.menu_items div a{
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.menu_items div a:hover {
+    color: #d6ad60;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 5em;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.main_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B76E79;
+    font-size: 2.0em;
+    font-family: after;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.work_resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 50px;
+}
+.work_resume a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.work_button{
+    height: 36px;
+    width: 90px;
+    background-color: #000;
+    border:1px solid #000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work_button:hover {
+    border-color: #eeeeee;
+}
+.resume_button{
+    height: 36px;
+    width: 90px;
+    color: #000;
+    background-color: #f2f2f2;
+    border:1px solid #000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.3s ease;
+}
+.resume_button:hover{
+    border:1px solid #d6ad60;
+}
+.end{
+    height: 10vh;
+    width: 100%;
+}
+.end_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d6ad60;
+    font-family: redressed;
+    font-size: 2em;
+    padding: 5px;
+}
+.end_line{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+.end_copy{
+    padding: 10px;
+}
