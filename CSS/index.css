@@ -125,7 +125,6 @@ main{
     transition: border 0.3s ease,transform 0.3s ease;
 }
 .resume_button:hover{
-    border:1px solid #d6ad60;
     transform: scale(0.95);
 }
 .work_together{
