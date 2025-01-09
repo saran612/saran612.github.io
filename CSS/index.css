@@ -10,6 +10,10 @@
     font-family: after;
     src: url(../assets/font/aftersick.otf);
 }
+@font-face {
+    font-family: promt;
+    src: url(../assets/font/Prompt-Black.ttf);
+}
 
 body{
     background-color: #eeeeee;
@@ -40,6 +44,12 @@ h1{
     top: -25px;
     gap: 20px;
 }
+.menu_items div{
+    transition: transform 0.3s ease;
+}
+.menu_items div:hover {
+    transform: scale(1.05);
+}
 .menu_items div a{
     color: #000;
     text-decoration: none;
@@ -61,8 +71,9 @@ main{
     align-items: center;
     color: #000;
     font-size: 5em;
-    font-family: Montserrat;
-    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: promt;
+    font-weight: normal;
 }
 .main_work{
     display: flex;
@@ -96,9 +107,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 .work_button:hover {
-    border-color: #eeeeee;
+    transform: scale(0.95);
 }
 .resume_button{
     height: 36px;
@@ -110,10 +122,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border 0.3s ease;
+    transition: border 0.3s ease,transform 0.3s ease;
 }
 .resume_button:hover{
     border:1px solid #d6ad60;
+    transform: scale(0.95);
+}
+.work_together{
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2;
 }
 .end{
     height: 10vh;
