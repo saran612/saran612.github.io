@@ -3,6 +3,10 @@
     src: url(../assets/font/Redressed-Regular.ttf);
 }
 @font-face {
+    font-family: eup;
+    src: url(../assets/font/Euphoria.ttf);
+}
+@font-face {
     font-family: Montserrat;
     src: url(../assets/font/Montserrat-VariableFont_wght.ttf);
 }
@@ -22,11 +26,6 @@ body{
     padding: 0;
     margin: 0;
 }
-.menu_bar{
-    width: 100%;
-    height: 40px;
-    background-color: #F5F5F7;
-}
 h1{
     color: #d6ad60;
     font-family: redressed;
@@ -41,7 +40,7 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -25px;
+    top: 20px;
     gap: 20px;
 }
 .menu_items div{
@@ -72,7 +71,7 @@ main{
     color: #000;
     font-size: 5em;
     letter-spacing: 2px;
-    font-family: promt;
+    font-family: after;
     font-weight: normal;
 }
 .main_work{
@@ -81,7 +80,7 @@ main{
     align-items: center;
     color: #B76E79;
     font-size: 2.0em;
-    font-family: after;
+    font-family: redressed;
     letter-spacing: 1px;
     position: relative;
     margin: 0;
