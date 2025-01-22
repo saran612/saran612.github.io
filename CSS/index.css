@@ -128,7 +128,7 @@ main{
     transform: scale(0.95);
 }
 .work_together{
-    height: 100vh;
+    height: 0;
     width: 100%;
     background-color: #f2f2f2;
 }
