@@ -2,10 +2,7 @@
     font-family: redressed;
     src: url(../assets/font/Redressed-Regular.ttf);
 }
-@font-face {
-    font-family: eup;
-    src: url(../assets/font/Euphoria.ttf);
-}
+
 @font-face {
     font-family: Montserrat;
     src: url(../assets/font/Montserrat-VariableFont_wght.ttf);
