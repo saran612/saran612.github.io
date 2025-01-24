@@ -2,5 +2,33 @@
 @font-face {font-family: 'Montserrat';src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
 @font-face {font-family: 'After';src: url(../assets/font/aftersick.otf);}
 @font-face {font-family: 'Prompt';src: url(../assets/font/Prompt-Black.ttf);}
-body {margin: 0;padding: 0;background-color: #202020;overflow: hidden;height: 100vh;}
-
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    height: 100vh;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    background-image: url(../assets/image/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 30px);
+    width: calc(100vw - 30px);
+    margin: 15px;
+}
+.logobox{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40vh;
+    height: 50px;
+    background-color: #F8F8F8;
+    clip-path: polygon(0% 0%,100% 0%,90% 100%,10% 100%);
+}
