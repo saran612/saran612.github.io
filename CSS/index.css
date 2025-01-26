@@ -2,6 +2,7 @@
 @font-face {font-family: 'Montserrat';src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
 @font-face {font-family: 'After';src: url(../assets/font/aftersick.otf);}
 @font-face {font-family: 'Prompt';src: url(../assets/font/Prompt-Black.ttf);}
+@font-face {font-family: roboto;src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +10,8 @@ body {
     overflow: hidden;
     height: 100vh;
 }
+
+
 .bg{
     display: flex;
     justify-content: center;
@@ -46,77 +49,40 @@ h3{
     top: -20px;
     left: 50%;  
     transform: translateX(-50%);
-    color: #d6ad60;
+    color: #F0F0F0; 
     font-family: Redressed;
     font-size: 30px;
 }
-.user{
+.menu_items{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    top: 40px;
+    left: 50px;
 }
-h1{
-    color: #DCE4C9;
-    font-size: 5em;
-    letter-spacing: 2px;
-    font-family: After;
-    font-weight: normal;
-    position: relative;
-    top: -30px;
-    padding: 15px;
+.menu_items div a{
+    color: #e5e4e2ad;
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 14px;
+    transition: color 0.3s ease ;
 }
-h2{
-    color: #F5F5DC;
-    font-size: 2.0em;
-    letter-spacing: 2px;
-    font-family: Redressed;
-    font-weight: normal;
-    position: relative;
-    top: -135px;
-    letter-spacing: 1px;
-    padding: 15px;
+.menu_items div a:hover {
+    color: #d6ad60;
+
 }
-.work_resume{
+.profile{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    justify-content: center;
     gap: 30px;
     position: fixed;
-    top: calc(50% + 15px);
-    transform: translateY(-50%);
+    top: 40px;
+    right: 100px;
+
 }
-.work_resume a{
-    text-decoration: none;
-    color: #f2f2f2;
-}
-.work_button{
-    height: 36px;
-    width: 90px;
-    background-color: #000;
-    border:1px solid #000;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-.work_button:hover {
-    transform: scale(0.95);
-}
-.resume_button{
-    height: 36px;
-    width: 90px;
-    color: #000;
-    background-color: #f2f2f2;
-    border:1px solid #000;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border 0.3s ease,transform 0.3s ease;
-}
-.resume_button:hover{
-    transform: scale(0.95);
+.profileimg{
+    height: 22px;
+    width: auto;
+    filter: invert(0.5);
 }
