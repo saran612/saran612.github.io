@@ -72,7 +72,6 @@ h3{
 }
 .menu_items div a:hover {
     color: #d6ad60;
-
 }
 .profile{
     display: flex;
@@ -82,7 +81,6 @@ h3{
     position: fixed;
     top: 40px;
     right: 100px;
-
 }
 .profileimg{
     height: 22px;
@@ -110,6 +108,23 @@ h2{
     font-family: redressed;
     font-weight: 100;
     letter-spacing: 0.5px;
+}
+.explore{
+    color: #000;
+    text-decoration: none;
+}
+.explore div {
+    display: flex;
+    position: relative;
+    top: -75px;
+    justify-content: center;
+    align-items: center;
+    font-family: acme;
+    background-color: #F0F0F0;
+    height: 36px;
+    width: 100px;
+    border-radius: 50px;
+    mix-blend-mode: difference;
 }
 .end{
     color: #c0c0c0a2;
