@@ -6,6 +6,7 @@
 @font-face {font-family: 'acme';src: url(../assets/font/Acme-Regular.ttf);}
 @font-face {font-family: 'after';src: url(../assets/font/aftersick.otf);}
 body {
+    display: flex;
     margin: 0;
     padding: 0;
     background-color: #333333;
@@ -14,12 +15,19 @@ body {
 }
 .loader{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: red;
+    color: #f0f0f0;
     font-size: 3rem;
+    font-family: anta;
+    height: auto;
+    width: 150px;
+    border: 2px solid #f0f0f0;
+    border-radius: 0px 20px 0px 0px;
     z-index: 1000;
     opacity: 1;
     transition: opacity 0s ease-in-out;
@@ -118,7 +126,7 @@ h1{
     font-weight: 100;
     letter-spacing: 0.7px;
 }
-h2{
+h4{
     position: relative;
     top: -80px;
     color: #E5E4E2;
