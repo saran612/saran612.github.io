@@ -16,10 +16,10 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
     }
 });
-
 window.onload = function() {
     setTimeout(function() {
+      document.getElementById('loader').classList.add('dis');
       document.getElementById('bg').classList.add('reveal');
     }, 4000);
   };
-  
+
