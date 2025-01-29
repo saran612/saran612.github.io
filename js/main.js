@@ -17,3 +17,9 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('bg').classList.add('reveal');
+    }, 4000);
+  };
+  
