@@ -5,6 +5,11 @@
 @font-face {font-family: 'roboto';src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
 @font-face {font-family: 'acme';src: url(../assets/font/Acme-Regular.ttf);}
 @font-face {font-family: 'after';src: url(../assets/font/aftersick.otf);}
+@font-face {font-family: 'Aclonica';src: url(../assets/font/Aclonica-Regular.ttf);}
+@font-face {font-family: 'Alston';src: url(../assets/font/Alston.otf);}
+@font-face {font-family: 'Greathy';src: url(../assets/font/Greathy\ Regular.ttf);}
+@font-face {font-family: 'Mushroom';src: url(../assets/font/Mushroom.ttf);}
+@font-face {font-family: 'Euphoria';src: url(../assets/font/Euphoria.ttf);}
 body {
     display: flex;
     margin: 0;
@@ -26,7 +31,6 @@ body {
     font-family: anta;
     height: auto;
     width: 150px;
-    border: 2px solid #f0f0f0;
     border-radius: 0px 20px 0px 0px;
     z-index: 1000;
     opacity: 1;
@@ -37,7 +41,7 @@ body {
 }
 .bg{
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
