@@ -10,6 +10,7 @@
 @font-face {font-family: 'Greathy';src: url(../assets/font/Greathy\ Regular.ttf);}
 @font-face {font-family: 'Mushroom';src: url(../assets/font/Mushroom.ttf);}
 @font-face {font-family: 'Euphoria';src: url(../assets/font/Euphoria.ttf);}
+
 body {
     display: flex;
     margin: 0;
