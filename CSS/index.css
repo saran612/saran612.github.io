@@ -18,29 +18,7 @@ body {
     overflow: hidden;
     height: 100vh;
 }
-.loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #f0f0f0;
-    font-size: 3rem;
-    height: auto;
-    width: 150px;
-    border-radius: 0px 20px 0px 0px;
-    z-index: 1000;
-    opacity: 1;
-}
-
-.loader.dis{
-    opacity: 0;
-}
 .bg{
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,10 +32,6 @@ body {
     width: calc(100vw - 30px);
     margin: 15px;
 }
-.bg.reveal{
-    opacity: 1;
-}
-
 .logobox{
     position: fixed;
     top: 0;
