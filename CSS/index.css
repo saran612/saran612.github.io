@@ -34,14 +34,13 @@ body {
     border-radius: 0px 20px 0px 0px;
     z-index: 1000;
     opacity: 1;
-    transition: opacity 0s ease-in-out;
 }
 .loader.dis{
     opacity: 0;
 }
 .bg{
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +129,7 @@ h1{
     font-weight: 100;
     letter-spacing: 0.7px;
 }
-h4{
+h2{
     position: relative;
     top: -80px;
     color: #E5E4E2;

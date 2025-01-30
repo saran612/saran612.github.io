@@ -3,11 +3,11 @@ window.onload = function() {
     setTimeout(function() {
       document.getElementById('loader').classList.add('dis');
       document.getElementById('bg').classList.add('reveal');
-    }, 1500);
+    }, 1300);
   };
 
   const fonts = ["Roboto","Redressed","Montserrat",
-     "Pacifico", "Press Start 2P", "Oswald","anta",
+     ,"Oswald","anta",
      "prompt","acme","after","Alston","Aclonica","Greathy",
      "Mushroom","Euphoria"];
   let index = 0;
