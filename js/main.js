@@ -16,4 +16,5 @@ window.onload = function() {
       index = (index + 1) % fonts.length;
       document.getElementById("loader").style.fontFamily = fonts[index];
   }
+  
   setInterval(changeFont, 100);
