@@ -20,7 +20,7 @@ window.onload = function() {
     setTimeout(function() {
       document.getElementById('loader').classList.add('dis');
       document.getElementById('bg').classList.add('reveal');
-    }, 2000);
+    }, 2100);
   };
 
   const fonts = ["Roboto","Redressed","Montserrat",
