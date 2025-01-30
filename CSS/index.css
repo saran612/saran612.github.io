@@ -28,13 +28,13 @@ body {
     transform: translate(-50%,-50%);
     color: #f0f0f0;
     font-size: 3rem;
-    font-family: anta;
     height: auto;
     width: 150px;
     border-radius: 0px 20px 0px 0px;
     z-index: 1000;
     opacity: 1;
 }
+
 .loader.dis{
     opacity: 0;
 }
