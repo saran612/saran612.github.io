@@ -3,7 +3,7 @@ window.onload = function() {
     setTimeout(function() {
       document.getElementById('loader').classList.add('dis');
       document.getElementById('bg').classList.add('reveal');
-    }, 2100);
+    }, 1500);
   };
 
   const fonts = ["Roboto","Redressed","Montserrat",
