@@ -22,7 +22,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     border-radius: 35px;
     background-image: url(../assets/image/bg.png);
     background-size: cover;
@@ -89,6 +88,45 @@ h3{
     height: 22px;
     width: auto;
     filter: invert(0.5);
+}
+.pht{
+    position: fixed;
+    top: 50%;
+    right: 75px;
+    transform: translateY(-50%);
+    height: 450px;
+    width: 337px;
+    border-radius: 5px;
+    background-image: url(../assets/image/saran.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+}
+.pht:hover{
+    background-image: url(../assets/image/saran1.jpeg);
+}
+.tag{
+    position: fixed;
+    top: 120px;
+    left: 75px;
+    width: calc(700px - 5%);
+    color: #F0F0F0;
+    font-size: 2.5em;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.line{
+    position: fixed;
+    top: 250px;
+    left: 75px;
+    width: calc(800px - 5%);
+    color: #F0F0F0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-family: Montserrat;
+    font-weight: 400;
 }
 .end{
     color: #c0c0c0a2;
