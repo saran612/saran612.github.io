@@ -99,11 +99,28 @@ h3{
     font-family: Montserrat;
     font-weight: 600;
 }
+.pht{
+    display: flex;
+    position: absolute;
+    right: 100px;
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    background-image: url(../assets/image/saran.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in;
+}
+.pht:hover{
+
+    background-image: url(../assets/image/saran1.jpeg);
+}
 .line{
     position: fixed;
     top: 250px;
     left: 75px;
-    width: calc(1250px - 5%);
+    width: calc(750px - 5%);
     color: #F0F0F0;
     font-size: 1.2rem;
     letter-spacing: 1px;
