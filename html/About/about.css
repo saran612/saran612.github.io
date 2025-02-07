@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 35px;
-    background-image: url(../assets/image/bg.png);
+    background-image: url(/assets/image/bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ h3{
     height: 500px;
     width: 350px;
     border-radius: 5px;
-    background-image: url(../assets/image/saran.jpeg);
+    background-image: url(/assets/image/saran.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ h3{
 }
 .pht:hover{
 
-    background-image: url(../assets/image/saran1.jpeg);
+    background-image: url(/assets/image/saran1.jpeg);
 }
 .line{
     position: fixed;
