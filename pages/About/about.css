@@ -1,15 +1,6 @@
-@font-face {font-family: 'Redressed';src: url(../assets/font/Redressed-Regular.ttf);}
-@font-face {font-family: 'Montserrat';src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
-@font-face {font-family: 'anta';src: url(../assets/font/Anta-Regular.ttf);}
-@font-face {font-family: 'Prompt';src: url(../assets/font/Prompt-Black.ttf);}
-@font-face {font-family: 'roboto';src: url(../assets/font/Montserrat-VariableFont_wght.ttf);}
-@font-face {font-family: 'acme';src: url(../assets/font/Acme-Regular.ttf);}
-@font-face {font-family: 'after';src: url(../assets/font/aftersick.otf);}
-@font-face {font-family: 'Aclonica';src: url(../assets/font/Aclonica-Regular.ttf);}
-@font-face {font-family: 'Alston';src: url(../assets/font/Alston.otf);}
-@font-face {font-family: 'Greathy';src: url(../assets/font/Greathy\ Regular.ttf);}
-@font-face {font-family: 'Mushroom';src: url(../assets/font/Mushroom.ttf);}
-@font-face {font-family: 'Euphoria';src: url(../assets/font/Euphoria.ttf);}
+@font-face {font-family: 'Redressed';src: url(/assets/font/Redressed-Regular.ttf);}
+@font-face {font-family: 'Montserrat';src: url(/assets/font/Montserrat-VariableFont_wght.ttf);}
+@font-face {font-family: 'roboto';src: url(/assets/font/Montserrat-VariableFont_wght.ttf);}
 body {
     display: flex;
     margin: 0;
@@ -120,12 +111,12 @@ h3{
     position: fixed;
     top: 250px;
     left: 75px;
-    width: calc(750px - 5%);
+    width: calc(900px - 10%);
     color: #F0F0F0;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    line-height: 25px;
-    font-family: Montserrat;
+    line-height: 27.5px;
+    font-family: roboto;
     font-weight: 400;
 }
 .end{
