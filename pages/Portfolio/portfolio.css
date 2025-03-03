@@ -1,3 +1,6 @@
+@font-face {font-family: 'Redressed';src: url(/assets/font/Redressed-Regular.ttf);}
+@font-face {font-family: 'Montserrat';src: url(/assets/font/Montserrat-VariableFont_wght.ttf);}
+@font-face {font-family: 'roboto';src: url(/assets/font/Montserrat-VariableFont_wght.ttf);}
 body {
     display: flex;
     margin: 0;
@@ -78,45 +81,7 @@ h3{
     width: auto;
     filter: invert(0.5);
 }
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-h1{
-    color: #d6ad60;
-    font-size: 5rem;
-    font-family: after;
-    font-weight: 100;
-    letter-spacing: 0.7px;
-}
-h2{
-    position: relative;
-    top: -80px;
-    color: #E5E4E2;
-    font-size: 2rem;
-    font-family: redressed;
-    font-weight: 100;
-    letter-spacing: 0.5px;
-}
-.explore{
-    color: #000;
-    text-decoration: none;
-}
-.explore div {
-    display: flex;
-    position: relative;
-    top: -75px;
-    justify-content: center;
-    align-items: center;
-    font-family: acme;
-    background-color: #F0F0F0;
-    height: 36px;
-    width: 100px;
-    border-radius: 50px;
-    mix-blend-mode: difference;
-}
+
 .end{
     color: #c0c0c0a2;
     position: fixed;

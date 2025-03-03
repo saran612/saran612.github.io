@@ -67,11 +67,16 @@ h3{
     left: 50px;
 }
 .menu_items div a{
-    color: #e5e4e2ad;
     text-decoration: none;
     font-family: roboto;
     font-size: 14px;
     transition: color 0.3s ease ;
+}
+.aboutbut,.portfoliobut,.contactbut{
+    color: #e5e4e2ad;
+}
+.homebut {
+    color: #d6ad60;
 }
 .menu_items div a:hover {
     color: #d6ad60;
@@ -107,7 +112,7 @@ h2{
     position: relative;
     top: -80px;
     color: #E5E4E2;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: redressed;
     font-weight: 100;
     letter-spacing: 0.5px;

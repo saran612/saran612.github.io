@@ -80,23 +80,13 @@ h3{
     width: auto;
     filter: invert(0.5);
 }
-.tag{
-    position: fixed;
-    top: 120px;
-    left: 75px;
-    width: calc(700px - 5%);
-    color: #F0F0F0;
-    font-size: 2.5em;
-    font-family: Montserrat;
-    font-weight: 600;
-}
 .pht{
     display: flex;
     position: absolute;
     right: 100px;
-    height: 500px;
-    width: 350px;
-    border-radius: 5px;
+    height: 250px;
+    width: 200px;
+    border-radius: 25px;
     background-image: url(/assets/image/saran.jpeg);
     background-size: cover;
     background-position: center;
@@ -107,18 +97,7 @@ h3{
 
     background-image: url(/assets/image/saran1.jpeg);
 }
-.line{
-    position: fixed;
-    top: 250px;
-    left: 75px;
-    width: calc(900px - 10%);
-    color: #F0F0F0;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    line-height: 27.5px;
-    font-family: roboto;
-    font-weight: 400;
-}
+
 .end{
     color: #c0c0c0a2;
     position: fixed;
