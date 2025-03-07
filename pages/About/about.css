@@ -81,6 +81,12 @@ h3{
     filter: invert(0.5);
 }
 
+.profileimg_x{
+    height: 30px;
+    width: auto;
+    filter: opacity(1);
+}
+
 .end{
     color: #c0c0c0a2;
     position: fixed;
