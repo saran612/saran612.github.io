@@ -95,6 +95,11 @@ h3{
     width: auto;
     filter: invert(0.5);
 }
+.profileimg_x{
+    height: 30px;
+    width: auto;
+    filter: opacity(1);
+}
 .name{
     display: flex;
     justify-content: center;
