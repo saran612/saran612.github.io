@@ -138,6 +138,11 @@ h2{
     width: 100px;
     border-radius: 50px;
     mix-blend-mode: difference;
+    transition: color,background-color 0.175s ease-in;
+}
+.explore div:hover{
+    color: #f0f0f0;
+    background-color: #333333;
 }
 .end{
     color: #c0c0c0a2;

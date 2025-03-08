@@ -91,7 +91,110 @@ h3{
     width: auto;
     filter: opacity(1);
 }
-
+.about_box{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 22.5vh;
+    width: 90vw;
+    background-color: transparent;
+}
+.box1-1{
+    height: 100%;
+    width: 40vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
+.box1-2,.box1-3{
+    height: 100%;
+    width: 30vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
+.box1-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box1-3 div{
+    width: 90%;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 90vw;
+    background-color: transparent;
+}
+.box2-1{
+    height: 100%;
+    width: 20vw;
+    border-radius: 15px;
+    background-image: url(/assets/image/saran.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image .3s ease-in-out;
+}
+.box2-1:hover{
+    background-image: url(/assets/image/saran1.jpeg);
+}
+.box2-2,.box2-3{
+    height: 100%;
+    width: 40vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
+.box2-2-about{
+    position: relative;
+    top: 2.5vh;
+    left: 2.5vw;
+    color: #afafaf;
+    font-family: Roboto;
+    font-size: .9rem;
+}
+.box3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 22.5vh;
+    width: 90vw;
+    background-color: transparent;
+}
+.box3-1{
+    height: 100%;
+    width: 40vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
+.box3-2,.box3-3{
+    height: 100%;
+    width: 30vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
 .end{
     color: #c0c0c0a2;
     position: fixed;
