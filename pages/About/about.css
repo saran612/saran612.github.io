@@ -76,9 +76,6 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    position: fixed;
-    top: 40px;
-    right: 100px;
 }
 .profileimg{
     height: 22px;
@@ -89,7 +86,6 @@ h3{
 .profileimg_x{
     height: 30px;
     width: auto;
-    filter: opacity(1);
 }
 .about_box{
     margin-top: 5vh;
@@ -115,9 +111,27 @@ h3{
     border-radius: 15px;
     background-color: #33333360;
 }
-.box1-2,.box1-3{
+.hi-saran{
+    position: relative;
+    top: 2.5vh;
+    left: 2.5vw;
+    color: #F0F0F0;
+    font-family: Roboto;
+    font-size: 1.5rem;
+}
+.box1-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     height: 100%;
-    width: 30vw;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: #33333360;
+}
+.box1-3{
+    height: 100%;
+    width: 40vw;
     border-radius: 15px;
     background-color: #33333360;
 }
@@ -154,7 +168,7 @@ h3{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image .3s ease-in-out;
+    transition: background-image .5s ease-in-out;
 }
 .box2-1:hover{
     background-image: url(/assets/image/saran1.jpeg);
@@ -164,6 +178,8 @@ h3{
     width: 40vw;
     border-radius: 15px;
     background-color: #33333360;
+}.box2-3{
+    overflow: hidden;
 }
 .box2-2-about{
     position: relative;
@@ -172,6 +188,16 @@ h3{
     color: #afafaf;
     font-family: Roboto;
     font-size: .9rem;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.skill-1,.skill-2{
+    position: relative;
+    top: 5vh;
+    font-size: 1rem;
 }
 .box3{
     display: flex;
