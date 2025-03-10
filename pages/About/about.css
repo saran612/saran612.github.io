@@ -164,7 +164,7 @@ h3{
     height: 100%;
     width: 20vw;
     border-radius: 15px;
-    background-image: url(/assets/image/saran.jpeg);
+    background-image: url(assets/image/saran.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,6 +188,24 @@ h3{
     color: #afafaf;
     font-family: Roboto;
     font-size: .9rem;
+}
+.box2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: start;
+    overflow: hidden;
+}
+.about{
+    position: relative;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffffd5;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 .skill{
     display: flex;
