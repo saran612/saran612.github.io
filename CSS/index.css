@@ -115,6 +115,8 @@ h1{
 }
 h2{
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
     top: -80px;
     color: #E5E4E2;
     font-size: 1.8rem;
