@@ -164,7 +164,7 @@ h3{
     height: 100%;
     width: 20vw;
     border-radius: 15px;
-    background-image: url(assets/image/saran.jpeg);
+    background-image: url(/assets/image/saran.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

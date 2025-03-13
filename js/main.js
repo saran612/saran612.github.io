@@ -6,7 +6,7 @@ function typeEffect() {
     if (index < text.length) {
         typewriter.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 70); 
+        setTimeout(typeEffect, 100); 
     } else {
         typewriter.style.borderRight = "none"; 
     }
