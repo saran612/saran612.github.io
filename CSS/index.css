@@ -1,3 +1,13 @@
 body{
     background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+.home_bar{
+    height: 7.5vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+h1{
+    
 }
