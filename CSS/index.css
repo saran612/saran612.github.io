@@ -70,39 +70,3 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
 }
-.menu_logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-}
-.menu_logo div{
-    height: 5px;
-    width: 33px;
-    border-radius: 50px;
-    background-color: #000;
-}
-.toggle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 28px;
-    width: 50px;
-    background-color: #333;
-    border-radius: 50px;
-}
-.toggle_div{
-    height: 24px;
-    width: 46px;
-    background-color: #f0f0f0;
-    border-radius: 50px;
-}
-.toggle_div_1{
-    position: relative;
-    top: 1px;
-    left: 1px;
-    height: 22px;
-    width: 22px;
-    background-color: #000;
-    border-radius: 50px;
-}
