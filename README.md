@@ -5,6 +5,7 @@ This repository contains the source code for my personal Portfolio Website — a
 Built with love using HTML, CSS, JavaScript.
 
 ✨ Features
+
 Interactive and responsive design
 
 Project highlights with descriptions and links
