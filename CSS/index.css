@@ -1,5 +1,7 @@
 body{
-    background-color: #F0F0F0;
+    background-image: url('https://saran612.github.io/assets/image/background.png'); 
+    z-index: -1;
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -25,7 +27,7 @@ body{
     text-decoration: none;
 }
 .home{
-    color: #d6ad60;
+    color: #4c4c4c;
 }
 .about,.portfolio,.contact{
     color: #000;
@@ -50,7 +52,7 @@ body{
     height: 25px;
     width: 25px;
     border-radius: 2.5px;
-    background-color: #F0F0F0;
+    background-color: transparent;
 }
 .social_logo1{
     background-image: url('/assets/image/git_logo.svg');
