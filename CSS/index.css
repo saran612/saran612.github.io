@@ -81,6 +81,7 @@ body{
 }
 .name{
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
