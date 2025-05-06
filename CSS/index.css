@@ -1,3 +1,8 @@
+@font-face {
+    font-family: after;
+    src: url("https://saran612.github.io/assets/font/aftersick.otf");
+}
+
 body{
     background-image: url('https://saran612.github.io/assets/image/background.png'); 
     z-index: -1;
@@ -16,11 +21,13 @@ body{
     top: 5px;
 }
 .menu_items{
-    margin-left: 50px;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     gap: 25px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
 }
 .menu_items a,.menu_items a::after{
     font-size: 14px;
@@ -71,4 +78,21 @@ body{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_name{
+    font-size: 5rem;
+    font-family: after;
+    text-align: center;
+}
+.sub_name{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Montserrat Alternates", sans-serif;
 }
