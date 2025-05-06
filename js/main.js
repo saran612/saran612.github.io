@@ -1,4 +1,4 @@
-const text = "B.Tech Student | Buliding & Learning";
+const text = "Buliding & Learning";
 let index = 0;
 
 function typeEffect() {
@@ -6,7 +6,7 @@ function typeEffect() {
     if (index < text.length) {
         typewriter.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 100); 
+        setTimeout(typeEffect, 105); 
     } else {
         typewriter.style.borderRight = "none"; 
     }
