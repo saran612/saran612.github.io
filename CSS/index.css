@@ -98,6 +98,7 @@ body{
     justify-content: center;
     font-size: 1.5rem;
     font-family: "Montserrat Alternates", sans-serif;
+    color: #333;
 }
 .button{
     display: flex;
