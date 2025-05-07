@@ -10,6 +10,8 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background-attachment: fixed;
+
 }
 .home_bar{
     display: flex;
@@ -79,6 +81,10 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
 }
+.naming{
+    width: 100vw;
+    height: 90vh;
+}
 .name{
     display: flex;
     flex-direction: column;
@@ -112,6 +118,10 @@ body{
     color: #f0f0f0;
     text-decoration: none;
 }
+.button_outter:hover{
+    transform: scalex(.98);
+    background-color: #4c4c4c;
+}
 .button_outter{
     display: flex;
     align-items: center;
@@ -120,6 +130,7 @@ body{
     height: 40px;
     background-color: #000;
     border-radius: 30px;
+    transition: all 0.3s ease-in;
 }
 .button_text{
     position: relative;
@@ -128,4 +139,15 @@ body{
     font-size: 20px;
     font-family: "Redressed", cursive;
     color: #f0f0f0;
+}
+.about_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+.about_page_bg{
+    width: 94vw;
+    height: 100vh;
 }
