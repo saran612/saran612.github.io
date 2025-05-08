@@ -195,6 +195,8 @@ body{
     height: 63.5vh;
 }
 .box5{
+    position: relative;
+    top: -10px;
     background-color: #f0f0f0;
     height: 140%;
     width: 50%;
