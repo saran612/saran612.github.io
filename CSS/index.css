@@ -145,7 +145,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 150vh;
 }
 .about_page_bg{
     display: flex;
@@ -175,7 +175,7 @@ body{
     left: 10vw;
 }
 .box1{
-    background-color: #f0f0f0;
+    background-color: #858585;
     height: 100%;
     width: 50%;
 }
@@ -183,16 +183,34 @@ body{
     background-color: #f0f0f0;
     width: 100%;
     height: 100%;
+    background-image: url('https://saran612.github.io/assets/image/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    border: 2px solid #f0f0f0;
 }
 .box3{
     background-color: #f0f0f0;
     width: 200%;
     height: 100%;
+    background-image: url('https://saran612.github.io/assets/image/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    border: 2px solid #f0f0f0;
 }
 .box4{
     background-color: #f0f0f0;
     width: 200%;
     height: 63.5vh;
+    background-image: url('https://saran612.github.io/assets/image/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    border: 2px solid #f0f0f0;
 }
 .box5{
     position: relative;
@@ -200,4 +218,23 @@ body{
     background-color: #f0f0f0;
     height: 140%;
     width: 50%;
+    background-image: url('https://saran612.github.io/assets/image/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    border: 2px solid #f0f0f0;
+}
+.div_photo{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://saran612.github.io/assets/image/saran1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+}
+.div_photo:hover{
+    filter: grayscale(0);
 }
