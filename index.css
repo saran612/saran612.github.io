@@ -1,0 +1,226 @@
+@font-face {
+    font-family: Lequire;
+    src: url(asset/fonts/Lequire.otf);
+}
+@font-face {
+    font-family: Sarcolenta;
+    src: url(asset/fonts/Sarcolenta.ttf);
+}
+
+body{
+    background-color: #141516;
+    padding: 0;
+    margin:0;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1440px) {
+    body{
+        font-size: 1rem;
+    }
+    .menu_box_con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        height: 50px;
+        width: 100%;
+
+    }
+    .menu_box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        background-color: transparent;
+        height: 100%;
+        width: 40%;
+    }
+    .menu_box div{
+        position: relative;
+        left: 50px;
+    }
+    .home,.home::after,.about, .about::after,.portfolio,.portfolio::after,.contact,.contact::after {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: #c0c0c0;
+        text-decoration: none;
+    }
+    .home,.home::after{
+        color: #f0f0f0;
+        font-weight: 600;
+    }
+    .logo_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        font-size: 32px;
+        font-family: "MedievalSharp", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #f0f0f0;
+    }
+    .profile_box{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: transparent;
+        height: 100%;
+        width: 40%;
+    }
+    .profile_box a,.profile_box a::after{
+        color: #c0c0c0;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        margin-right: 35px;
+    }
+    .title_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        width: 100%;
+        background-color: transparent;
+    }
+    .main_title{
+        font-family: Lequire;
+        font-size: 80px;
+        font-weight: 100;
+        letter-spacing: .2dvw;
+        color: #f0f0f0;
+
+    }
+    .sub_title{
+        font-size: 36px;
+        color: #f0f0f0;
+        font-family: Sarcolenta;
+    }
+    .title_button{
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c0c0c0;
+        width: 135px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        background-color: #333333;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .title_button:hover{
+        transform: scale(98%);
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    body{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .menu_box_con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        height: 50px;
+        width: 100%;
+    }
+    .menu_box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        background-color: transparent;
+        height: 100%;
+        width: 40%;
+    }
+    .menu_box div{
+        position: relative;
+        left: 50px;
+    }
+    .menu_box div a , .menu_box div a::after {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+    .logo_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+        font-family: "MedievalSharp", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #f0f0f0;
+    }
+    .profile_box{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: transparent;
+        height: 100%;
+        width: 40%;
+    }
+    .profile_box a,.profile_box a::after{
+        color: #f0f0f0;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        margin-right: 35px;
+    }
+    .title_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        width: 100%;
+        background-color: transparent;
+    }
+    .main_title{
+        font-family: Lequire;
+        font-size: 74px;
+        font-weight: 100;
+        letter-spacing: .2dvw;
+        color: #f0f0f0;
+    }
+    .sub_title{
+        font-size: 36px;
+        color: #f0f0f0;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
