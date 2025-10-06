@@ -1,8 +1,8 @@
 {
-  "name": "nextn",
+  "name": "saran612.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/nextn",
+  "homepage": "https://saran612.github.io/",
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
