@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Lequire';
+  src: url('/Lequire.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sarcolenta';
+  src: url('/Sarcolenta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('/Geomanist-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 94.1%; /* #f0f0f0 */
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 1024px) {
+  @layer base {
+    html {
+      font-size: 80%;
+    }
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    color: #000;
+  }
+
+  .text-gradient-mono {
+    background: linear-gradient(to right, #fff, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .text-gradient-custom {
+    color: #000;
+  }
+
+  .btn-contact-gradient {
+    background: #000;
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-contact-gradient:hover {
+    filter: brightness(1.2);
+  }
+
+  .progress-gradient {
+    background: #000;
+  }
+
+  .typewriter-container {
+    display: inline-block;
+  }
+
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    border-right: .05em solid hsl(var(--foreground));
+    animation: 
+      blink-caret .75s step-end infinite;
+  }
+
+  .typing {
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  .untyping {
+    animation: 
+      untyping 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  .fade-in {
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+  }
+
+  .fade-in-delay {
+    animation: fadeInAnimation 0.5s ease-in-out 1s forwards;
+  }
+  
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn-gradient-hover {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .btn-gradient-hover:hover {
+    @apply bg-primary/90;
+  }
+
+  .social-link {
+    @apply relative inline-flex items-center justify-center w-16 h-16 rounded-full overflow-hidden transition-all duration-300;
+  }
+
+  .social-link::before {
+    content: '';
+    @apply absolute top-1/2 left-1/2 w-full h-full bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-300 ease-in-out;
+  }
+
+  .social-link:hover::before {
+    @apply scale-100;
+  }
+
+  .social-link-icon {
+    @apply relative z-10 transition-colors duration-300;
+  }
+
+  .social-link:hover .social-link-icon {
+    @apply text-primary-foreground;
+  }
+
+  @keyframes shimmer {
+    from {
+      transform: translateX(-100%) rotate(20deg);
+    }
+    to {
+      transform: translateX(100%) rotate(20deg);
+    }
+  }
+
+  .skill-card {
+    @apply relative overflow-hidden;
+  }
+  
+  .skill-card::before {
+    content: '';
+    @apply absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 transition-opacity duration-500;
+    transform: rotate(20deg);
+  }
+  
+  .skill-card:hover::before {
+    @apply opacity-100;
+    animation: shimmer 2s infinite;
+  }
+
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes untyping {
+    from { width: 100% }
+    to { width: 0% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: hsl(var(--foreground)); }
+  }
+
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  main, section, .printable-area {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+  .card {
+     border: 1px solid #ccc !important;
+     box-shadow: none !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
