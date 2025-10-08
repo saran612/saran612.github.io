@@ -29,7 +29,7 @@ export default function About() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-2">Hi, I’m Saran Karthick</h2>
                 <p className="text-lg md:text-2xl text-primary mb-4 font-semibold">I create intelligent web experiences.</p>
                 <p className="text-base md:text-xl text-foreground/80 leading-relaxed ">
-                  I am a passionate Computer Science and Business Systems undergraduate at Bannari Amman Institute of Technology, and my passion lies at the intersection of web development, artificial intelligence, and automation.
+                  I am a passionate Computer Science and Business Systems undergraduate at Bannari Amman Institute of Technology, and my passion lies at the intersection of web development, machine learning, and automation.
                   <br />
                   <br />
                   From experimenting with machine learning models to building full-stack applications, I’ve always been fascinated by turning complex challenges into elegant solutions.
