@@ -10,7 +10,7 @@ export default function Hero() {
   const [isDeleting, setDeleting] = React.useState(false);
   
   React.useEffect(() => {
-    const texts = ["Building & Learning", "B.Tech Student", "ML Developer"];
+    const texts = ["Building & Learning", "B.Tech Student", "ML Engineer"];
     const typingSpeed = 100;
     const deletingSpeed = 50;
     const delay = 2000;
