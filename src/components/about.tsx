@@ -14,7 +14,7 @@ export default function About() {
           <div className="md:col-span-1">
             <Card className="overflow-hidden shadow-xl rounded-lg border-2 border-primary/10 h-full">
               <Image 
-                src="/public/saran.jpeg"
+                src="saran.jpeg"
                 alt="Saran Karthick working"
                 width={400}
                 height={500}
