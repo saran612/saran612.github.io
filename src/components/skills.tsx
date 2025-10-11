@@ -9,14 +9,13 @@ const skillCategories = [
       { name: 'Python' },
       { name: 'C/C++' },
       { name: 'Java' },
-      { name: 'JavaScript/TypeScript' },
     ],
   },
   {
     title: 'Web Development',
     skills: [
-      { name: 'HTML/CSS' },
-      { name: 'React' },
+      { name: 'React.js' },
+      { name: 'JavaScript/TypeScript' },
       { name: 'Node.js' },
     ],
   },
