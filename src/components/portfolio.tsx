@@ -23,7 +23,7 @@ const projects: Project[] = [
     image: 'https://placehold.co/600x400.png',
     tags: ['Web App', 'Next.js', 'UI/UX'],
     liveUrl: '#',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/saran612/Arise',
     dataAiHint: 'task management'
   },
   {
