@@ -3,6 +3,7 @@ import Hero from '@/components/hero';
 import About from '@/components/about';
 import Portfolio from '@/components/portfolio';
 import Skills from '@/components/skills';
+import Certificates from '@/components/certificates';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 import ScrollFadeIn from '@/components/scroll-fade-in';
@@ -23,6 +24,9 @@ export default function Home() {
         </ScrollFadeIn>
         <ScrollFadeIn>
           <Skills />
+        </ScrollFadeIn>
+        <ScrollFadeIn>
+          <Certificates />
         </ScrollFadeIn>
         <ScrollFadeIn>
           <Contact />

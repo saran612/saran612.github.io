@@ -30,9 +30,12 @@ const skillCategories = [
   {
     title: 'Tools',
     skills: [
-        { name: 'Figma' },
         { name: 'Git' },
+        { name: 'Figma' },
         { name: 'Docker' },
+        { name: 'GitHub' },
+        { name: 'Linux' },
+        { name: 'Vercel' },
     ]
   }
 ];
