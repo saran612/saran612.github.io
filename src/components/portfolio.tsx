@@ -8,33 +8,33 @@ import type { Project } from '@/types';
 const projects: Project[] = [
   {
     id: 1,
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product management, shopping cart, and payment integration.',
+    title: 'Metro-Mind AI',
+    description: 'A decision-support dashboard and real-time train scheduling for the Kochi Metro.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Web App', 'React', 'Node.js'],
+    tags: ['Python', 'React', 'TensorFlow'],
     liveUrl: '#',
     repoUrl: '#',
-    dataAiHint: 'e-commerce website'
+    dataAiHint: 'dashboard website'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A sleek and intuitive task management application to boost productivity.',
+    title: 'Memora',
+    description: 'A Retrieval-Augmented Generation (RAG) for personal knowledge management capabilities.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Web App', 'Next.js', 'UI/UX'],
+    tags: ['Python', 'LangChain', 'Vector Embeddings', 'LLM'],
     liveUrl: '#',
     repoUrl: 'https://github.com/saran612/Arise',
-    dataAiHint: 'task management'
+    dataAiHint: 'RAG'
   },
   {
     id: 3,
-    title: 'Mobile Fitness Tracker',
-    description: 'A cross-platform mobile app to track workouts, set goals, and monitor progress.',
+    title: 'AgriQCert',
+    description: 'A end-to-end platform for a digital product passport system for agricultural imports and exports.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Mobile App', 'React Native'],
+    tags: ['Python', 'React.js', 'SQL'],
     liveUrl: '#',
     repoUrl: '#',
-    dataAiHint: 'fitness app'
+    dataAiHint: 'AgriQCert app'
   },
   {
     id: 4,
@@ -73,7 +73,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-24 printable-area">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl md:text-8xl font-geomanist font-bold text-center mb-12">
-          <span className="text-black">My Portfolio</span>
+          <span className="text-black">My Projects</span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map(project => (
