@@ -8,3 +8,12 @@ export type Project = {
   liveUrl?: string;
   repoUrl?: string;
 };
+
+export type Certificate = {
+  id: number;
+  title: string;
+  issuer: string;
+  image: string;
+  dataAiHint: string;
+  verifyUrl?: string;
+};

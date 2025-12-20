@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Geomanist';
-  src: url('/Geomanist-Book.otf') format('opentype');
+  src: url('/Geomanist-Book.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -98,7 +98,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   
   .text-gradient-custom {

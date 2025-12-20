@@ -38,8 +38,8 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'Corporate Website Redesign',
-    description: 'A complete redesign of a corporate website focusing on modern UI/UX principles and brand identity.',
+    title: 'Dark-Cloud',
+    description: 'A social platform for connecting like-minds around the world.',
     image: 'https://placehold.co/600x400.png',
     tags: ['UI/UX', 'Figma'],
     liveUrl: '#',
@@ -48,8 +48,8 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing complex datasets using D3.js and React.',
+    title: 'Arise',
+    description: 'An interactive productivity tracker web app.',
     image: 'https://placehold.co/600x400.png',
     tags: ['Web App', 'Data Viz'],
     liveUrl: '#',
@@ -58,8 +58,8 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: 'Social Media Mobile App',
-    description: 'A concept design for a new social media platform, focusing on user engagement and intuitive navigation.',
+    title: 'Drift',
+    description: 'A hybrid learning platform combining AI and interactive content.',
     image: 'https://placehold.co/600x400.png',
     tags: ['Mobile App', 'UI/UX'],
     liveUrl: '#',
