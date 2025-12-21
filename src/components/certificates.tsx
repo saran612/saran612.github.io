@@ -18,7 +18,7 @@ const certificates: Certificate[] = [
     id: 2,
     title: 'Supervised Machine Learning: Regression andClassification',
     issuer: 'Stanford Online',
-    image: '/image/ml.jpg',
+    image: '/image/ML.jpg',
     verifyUrl: 'https://coursera.org/verify/G2RT9185EH5M',
     dataAiHint: 'certificate award'
   },
@@ -26,7 +26,7 @@ const certificates: Certificate[] = [
     id: 3,
     title: 'Machine Learning with Python',
     issuer: 'FreeCodeCamp',
-    image: '/image/free_code_camp.jpg',
+    image: '/image/Free_Code_Camp.jpg',
     verifyUrl: 'https://www.freecodecamp.org/certification/saran612/machine-learning-with-python-v7',
     dataAiHint: 'official certificate'
   },
@@ -34,7 +34,7 @@ const certificates: Certificate[] = [
     id: 4,
     title: 'IBM Z Day 2025 - AI & Data',
     issuer: 'IBM',
-    image: '/image/ibmzday2025-aidata_badge2025.jpg',
+    image: '/image/IBMZDay2025-AIData_Badge2025.jpg',
     verifyUrl: 'https://www.credly.com/go/U564RnEh',
     dataAiHint: 'official certificate'
   },
