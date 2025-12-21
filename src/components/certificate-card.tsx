@@ -26,7 +26,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
               src={certificate.image}
               alt={certificate.title}
               fill
-              className="object-cover"
+              className="object-contain bg-white"
               data-ai-hint={certificate.dataAiHint}
             />
           </div>

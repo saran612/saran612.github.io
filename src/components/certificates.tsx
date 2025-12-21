@@ -10,7 +10,7 @@ const certificates: Certificate[] = [
     id: 1,
     title: 'Gemini Student Certificate',
     issuer: 'Google',
-    image: 'https://placehold.co/800x600.png',
+    image: '/image/google_student_cetificate.jpg',
     verifyUrl: '#',
     dataAiHint: 'certificate document'
   },
@@ -18,39 +18,39 @@ const certificates: Certificate[] = [
     id: 2,
     title: 'Supervised Machine Learning: Regression andClassification',
     issuer: 'Stanford Online',
-    image: 'https://placehold.co/800x600.png',
-    verifyUrl: '#',
+    image: '/image/ml.jpg',
+    verifyUrl: 'https://coursera.org/verify/G2RT9185EH5M',
     dataAiHint: 'certificate award'
   },
   {
     id: 3,
     title: 'Machine Learning with Python',
     issuer: 'FreeCodeCamp',
-    image: 'https://placehold.co/800x600.png',
-    verifyUrl: '#',
+    image: '/image/free_code_camp.jpg',
+    verifyUrl: 'https://www.freecodecamp.org/certification/saran612/machine-learning-with-python-v7',
     dataAiHint: 'official certificate'
   },
   {
     id: 4,
     title: 'IBM Z Day 2025 - AI & Data',
     issuer: 'IBM',
-    image: 'https://placehold.co/800x600.png',
-    verifyUrl: '#',
+    image: '/image/ibmzday2025-aidata_badge2025.jpg',
+    verifyUrl: 'https://www.credly.com/go/U564RnEh',
     dataAiHint: 'official certificate'
   },
   {
     id: 5,
     title: 'Basics of Python',
     issuer: 'Infosys-Springboard',
-    image: 'https://placehold.co/800x600.png',
-    verifyUrl: '#',
+    image: '/image/python.jpg',
+    verifyUrl: ' https://verify.onwingspan.com',
     dataAiHint: 'official certificate'
   },
   {
     id: 6,
     title: 'JavaScript (Basic)',
     issuer: 'Hackerrank',
-    image: 'https://placehold.co/800x600.png',
+    image: '/image/javascript_basic.jpg',
     verifyUrl: '#',
     dataAiHint: 'official certificate'
   },
