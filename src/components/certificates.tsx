@@ -40,10 +40,10 @@ const certificates: Certificate[] = [
   },
   {
     id: 5,
-    title: 'Basics of Python',
-    issuer: 'Infosys-Springboard',
+    title: 'Basics of Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+    issuer: 'Oracle',
     image: '/image/python.jpg',
-    verifyUrl: ' https://verify.onwingspan.com',
+    verifyUrl: '#',
     dataAiHint: 'official certificate'
   },
   {
