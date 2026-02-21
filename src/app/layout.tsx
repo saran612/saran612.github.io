@@ -1,10 +1,30 @@
-import type {Metadata} from 'next';
-import './globals.css';
-import { Toaster } from "@/components/ui/toaster";
+import type { Metadata } from "next";
+import { CustomCursor } from "@/components/CustomCursor";
+import { MenuBar } from "@/components/MenuBar";
+import { Inter, Great_Vibes } from "next/font/google";
+import localFont from "next/font/local";
+
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const calligraphy = Great_Vibes({
+  variable: "--font-calligraphy",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const lequire = localFont({
+  src: "../../public/Lequire.otf",
+  variable: "--font-lequire",
+});
 
 export const metadata: Metadata = {
-  title: 'Saran Karthick',
-  description: 'A portfolio showcase for the modern developer. Built with Next.js.',
+  title: "Intelligence. Automated. Beautifully.",
+  description: "Hyper-minimalist portfolio",
 };
 
 export default function RootLayout({
@@ -13,18 +33,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+    <html lang="en" className="dark scroll-smooth">
+      <body
+        className={`${inter.variable} ${calligraphy.variable} ${lequire.variable} font-sans antialiased bg-black text-white cursor-none`}
+      >
+        <CustomCursor />
+        <MenuBar />
         {children}
-        <Toaster />
       </body>
     </html>
   );
