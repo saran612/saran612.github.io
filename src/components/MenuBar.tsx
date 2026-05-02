@@ -79,7 +79,7 @@ export function MenuBar() {
               GitHub
             </a>
             <a
-              href="https://leetcode.com/u/saran0612"
+              href="https://leetcode.com/u/saranx612"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-white transition-colors cursor-pointer"
