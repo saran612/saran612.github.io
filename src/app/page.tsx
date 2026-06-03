@@ -11,6 +11,7 @@ import {
 } from "framer-motion";
 import { AccentBackground } from "@/components/AccentBackground";
 import Image from "next/image";
+import { skillLogos, skillHoverColors } from "@/components/SkillLogos";
 
 interface DetailItem {
   title: string;
@@ -190,6 +191,49 @@ const certificatesData = [
     ],
   },
 ];
+
+const MarqueeRow = ({
+  skills,
+  direction = "left",
+}: {
+  skills: string[];
+  direction?: "left" | "right";
+}) => {
+  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills];
+
+  return (
+    <div className="w-full overflow-hidden flex py-3 relative">
+      <motion.div
+        className="flex gap-6 md:gap-8 items-center shrink-0"
+        animate={{
+          x: direction === "left" ? ["0%", "-25%"] : ["-25%", "0%"],
+        }}
+        transition={{
+          ease: "linear",
+          duration: 35,
+          repeat: Infinity,
+        }}
+      >
+        {duplicatedSkills.map((skill, idx) => {
+          const logo = skillLogos[skill];
+          return (
+            <div
+              key={idx}
+              className="group relative flex flex-col items-center justify-center p-6 md:p-8 border border-white/10 bg-[#0d0d0f] rounded-2xl md:rounded-3xl transition-all duration-300 shrink-0 aspect-square w-24 h-24 md:w-32 md:h-32 text-zinc-500 hover:text-white hover:border-white/20 hover:scale-105 hover:bg-[#121215] shadow-lg cursor-none"
+            >
+              <div className="transform group-hover:scale-105 transition-transform duration-300">
+                {logo}
+              </div>
+              <span className="absolute bottom-2 text-[9px] md:text-[10px] tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold text-zinc-400">
+                {skill}
+              </span>
+            </div>
+          );
+        })}
+      </motion.div>
+    </div>
+  );
+};
 
 export default function Home() {
   // Wait before mounting everything else for the black screen effect
@@ -475,8 +519,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: SKILLS */}
-      <section className="relative min-h-[100vh] w-full flex flex-col items-center justify-center py-32 px-6 md:px-20 z-10 border-t border-white/5">
-        <div className="w-full max-w-[1600px] mx-auto mb-16 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+      <section className="relative min-h-[100vh] w-full flex flex-col items-center justify-center py-32 px-6 md:px-20 z-10 border-t border-white/5 overflow-hidden">
+        <div className="w-full max-w-[1600px] mx-auto mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-8 z-20">
           <motion.h2
             className="text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter"
             initial={{ opacity: 0, x: -50 }}
@@ -488,22 +532,36 @@ export default function Home() {
           </motion.h2>
         </div>
 
-        <div className="w-full max-w-[1600px] mx-auto flex flex-wrap gap-4 md:gap-6 lg:gap-8">
-          {skillsData.map((skill, idx) => (
-            <motion.div
-              key={idx}
-              data-cursor-scale="1.5"
-              className="px-6 py-4 md:px-10 md:py-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-colors duration-500 cursor-none group"
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ ...springPhysics, delay: (idx % 8) * 0.1 }}
-            >
-              <span className="text-xl md:text-3xl lg:text-4xl font-thin tracking-tighter group-hover:font-medium transition-all duration-300">
-                {skill}
-              </span>
-            </motion.div>
-          ))}
+        {/* 3D Perspective Marquee Wrapper */}
+        <div 
+          className="relative w-full py-16 flex flex-col gap-6 md:gap-8 overflow-visible"
+          style={{
+            perspective: "1200px",
+            transformStyle: "preserve-3d",
+            maskImage: "radial-gradient(circle at center, white 30%, transparent 80%)",
+            WebkitMaskImage: "radial-gradient(circle at center, white 30%, transparent 80%)",
+          }}
+        >
+          <motion.div
+            style={{
+              transform: "rotateX(20deg) rotateZ(-6deg)",
+              transformStyle: "preserve-3d",
+            }}
+            className="flex flex-col gap-4 md:gap-6 z-10"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ ...heavySpring, delay: 0.2 }}
+          >
+            <MarqueeRow 
+              skills={skillsData.slice(0, Math.ceil(skillsData.length / 2))} 
+              direction="left" 
+            />
+            <MarqueeRow 
+              skills={skillsData.slice(Math.ceil(skillsData.length / 2))} 
+              direction="right" 
+            />
+          </motion.div>
         </div>
       </section>
 

@@ -4,32 +4,37 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function MenuBar() {
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
+    // Set the total delay to exactly 6 seconds (6000ms)
+    const timer = setTimeout(() => {
+      setShowMenu(true);
+    }, 6000);
+
     const handleScroll = () => {
-      // Show menu once user scrolls down slightly
-      if (window.scrollY > 10 && !hasScrolled) {
-        setHasScrolled(true);
+      if (window.scrollY > 10) {
+        setShowMenu(true);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // Initial check in case they reload midway down the page
     handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasScrolled]);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <AnimatePresence>
-      {hasScrolled && (
+      {showMenu && (
         <motion.nav
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -30 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }} // Smooth custom easing
+          initial={{ opacity: 0, y: -40, filter: "blur(5px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          exit={{ opacity: 0, y: -40, filter: "blur(5px)" }}
+          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }} // Slower, premium transition duration with blur fade
           className="fixed top-0 left-0 w-full z-[9000] px-4 md:px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-black/20 border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
         >
           {/* Left: Navigation Menu */}
