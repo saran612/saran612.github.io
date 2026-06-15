@@ -41,13 +41,12 @@ const certificatesData: DetailItem[] = [
     ],
   },
   {
-    title: "Google Gemini Student Certificate ",
-    description:
-      "Completed the Google Gemini Student Certificate and skill lab badges.",
+    title: "NPTEL ",
+    description:"Introduction to Internet of Things",
     code: `import tensorflow as tf\n\nmodel = tf.keras.models.Sequential([\n  tf.keras.layers.Dense(128, activation='relu'),\n  tf.keras.layers.Dense(10)\n])`,
     stats: [
-      { label: "Focus", value: "Google AI Labs", suffix: "" },
-      { label: "No of skill badges", value: "20+", suffix: "" },
+      { label: "Score", value: "90%", suffix: "" },
+      { label: "Top", value: "5%", suffix: "" },
     ],
   },
   {
