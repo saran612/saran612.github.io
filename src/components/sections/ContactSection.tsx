@@ -70,7 +70,7 @@ export function ContactSection() {
     },
     {
       name: "Reddit",
-      href: "#",
+      href: "https://www.reddit.com/user/asksAr/",
       icon: (
         <svg
           viewBox="0 0 24 24"
