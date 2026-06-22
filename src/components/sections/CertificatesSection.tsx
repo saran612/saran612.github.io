@@ -91,7 +91,7 @@ export function CertificatesSection({ onSelectItem }: CertificatesSectionProps) 
         {certificatesData.map((cert, idx) => (
           <motion.div
             key={idx}
-            className="w-full"
+            className="w-full h-full flex flex-col"
             initial={{ opacity: 0, scale: 0.95, y: 50 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             whileHover={{ y: -8, scale: 1.02 }}
@@ -101,48 +101,51 @@ export function CertificatesSection({ onSelectItem }: CertificatesSectionProps) 
           >
             <div
               data-magnetic="true"
-              className="group relative w-full aspect-[16/9] border border-white/10 flex flex-col justify-end p-8 md:p-12 overflow-hidden cursor-none transition-colors duration-500 hover:border-white/30 hover:bg-white/[0.02]"
+              className="group relative w-full h-full min-h-[200px] md:min-h-[280px] border border-white/10 flex flex-col justify-between p-6 md:p-8 cursor-none transition-colors duration-500 hover:border-white/30 hover:bg-white/[0.02] flex-grow"
             >
               {/* Background logic layer (revealed on hover) */}
-              <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 backdrop-blur-md bg-white/5 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 backdrop-blur-md bg-white/5 flex items-center justify-center pointer-events-none overflow-hidden">
                 <pre className="text-[10px] md:text-xs text-indigo-400/40 font-mono tracking-widest leading-relaxed p-8 opacity-50 transform scale-110 group-hover:scale-100 transition-transform duration-1000 ease-out whitespace-pre-wrap">
                   {cert.code}
                 </pre>
               </div>
 
-              <div className="relative z-10 flex flex-col h-full justify-between">
+              <div className="relative z-10 flex flex-col justify-between gap-4 h-full w-full flex-grow">
                 <div>
-                  <h2 className="text-xs md:text-sm font-medium text-zinc-600 tracking-[0.3em] uppercase mb-4">
+                  <h2 className="text-[10px] md:text-xs font-medium text-zinc-600 tracking-[0.3em] uppercase mb-2">
                     Certificate 0{idx + 1}
                   </h2>
                 </div>
 
-                <div>
-                  <motion.h3
-                    className="text-4xl md:text-5xl xl:text-6xl font-black tracking-tighter mb-4"
-                    initial={{ x: -20, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ ...springPhysics, delay: 0.2 }}
-                    viewport={{ once: true }}
-                  >
-                    {cert.title}
-                  </motion.h3>
+                <div className="flex flex-col justify-between flex-grow gap-4">
+                  <div>
+                    <motion.h3
+                      className="text-2xl md:text-3xl xl:text-4xl font-black tracking-tighter mb-2 break-words"
+                      initial={{ x: -20, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      transition={{ ...springPhysics, delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      {cert.title}
+                    </motion.h3>
 
-                  <motion.p
-                    className="text-sm md:text-base text-zinc-400 font-light max-w-lg mb-8 md:mb-12 leading-relaxed"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.4 }}
-                    viewport={{ once: true }}
-                  >
-                    {cert.description}
-                  </motion.p>
+                    <motion.p
+                      className="text-xs md:text-sm text-zinc-400 font-light max-w-lg mb-4 leading-relaxed break-words"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, delay: 0.4 }}
+                      viewport={{ once: true }}
+                    >
+                      {cert.description}
+                    </motion.p>
+                  </div>
 
-                  <div className="grid grid-cols-2 gap-6 pt-6 border-t border-white/10">
+                  <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 pt-3 border-t border-white/10 mt-auto">
                     {cert.stats.map((stat, statIdx) => (
                       <motion.div
                         key={statIdx}
-                        initial={{ y: 20, opacity: 0 }}
+                        className="flex items-center gap-1.5"
+                        initial={{ y: 10, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                           ...springPhysics,
@@ -150,17 +153,13 @@ export function CertificatesSection({ onSelectItem }: CertificatesSectionProps) 
                         }}
                         viewport={{ once: true }}
                       >
-                        <p className="text-[10px] md:text-xs text-zinc-500 uppercase tracking-widest mb-3 font-light">
-                          {stat.label}
-                        </p>
-                        <p className="text-2xl md:text-3xl xl:text-4xl font-thin tracking-tighter">
+                        <span className="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-light">
+                          {stat.label}:
+                        </span>
+                        <span className="text-xs md:text-sm text-zinc-300 font-medium tracking-tight">
                           {stat.value}
-                          {stat.suffix && (
-                            <span className="text-lg md:text-2xl text-zinc-600 font-light ml-1">
-                              {stat.suffix}
-                            </span>
-                          )}
-                        </p>
+                          {stat.suffix && stat.suffix}
+                        </span>
                       </motion.div>
                     ))}
                   </div>
