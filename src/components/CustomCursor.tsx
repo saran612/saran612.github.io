@@ -42,8 +42,13 @@ export function CustomCursor() {
             }
         };
 
+        const handleContextMenu = (e: MouseEvent) => {
+            e.preventDefault();
+        };
+
         window.addEventListener("mousemove", manageMouseMove);
         document.addEventListener("mouseout", manageMouseOut);
+        window.addEventListener("contextmenu", handleContextMenu);
 
         const render = () => {
             // 1:1 unhindered hardware tracking (zero latency drag)
@@ -72,6 +77,7 @@ export function CustomCursor() {
         return () => {
             window.removeEventListener("mousemove", manageMouseMove);
             document.removeEventListener("mouseout", manageMouseOut);
+            window.removeEventListener("contextmenu", handleContextMenu);
             cancelAnimationFrame(animationFrameId);
         };
     }, []);
