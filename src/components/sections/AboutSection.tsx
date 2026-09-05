@@ -21,7 +21,7 @@ export function AboutSection({ manifestoRef, manifestoColor }: AboutSectionProps
     <section
       id="about"
       ref={manifestoRef}
-      className="relative h-[100vh] w-full flex items-center justify-center px-6 md:px-20 z-10 py-32"
+      className="relative min-h-[100vh] w-full flex items-center justify-center px-6 md:px-20 z-10 py-32"
     >
       <motion.div
         className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-center"
@@ -51,7 +51,7 @@ export function AboutSection({ manifestoRef, manifestoColor }: AboutSectionProps
 
         {/* Content (Right) */}
         <div className="md:col-span-7 flex flex-col justify-center">
-          <h2 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-4 leading-none">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-[0px] mb-4 leading-none">
             Saran <br className="hidden md:block" />
             Karthick
           </h2>

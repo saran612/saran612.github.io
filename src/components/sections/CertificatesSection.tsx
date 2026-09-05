@@ -74,7 +74,7 @@ export function CertificatesSection({ onSelectItem }: CertificatesSectionProps) 
   return (
     <section
       id="certificates"
-      className="relative min-h-[120vh] w-full flex flex-col items-center justify-center py-32 px-6 md:px-20 z-10 border-t border-white/5"
+      className="relative min-h-[100vh] w-full flex flex-col items-center justify-center py-32 px-6 md:px-20 z-10"
     >
       <div className="w-full max-w-[1600px] mx-auto mb-16 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
         <motion.h2

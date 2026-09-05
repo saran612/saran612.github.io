@@ -7,10 +7,10 @@ export function MenuBar() {
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
-    // Set the total delay to exactly 6 seconds (6000ms)
+    // Set the total delay to 5 seconds (5000ms)
     const timer = setTimeout(() => {
       setShowMenu(true);
-    }, 6000);
+    }, 5000);
 
     const handleScroll = () => {
       if (window.scrollY > 10) {

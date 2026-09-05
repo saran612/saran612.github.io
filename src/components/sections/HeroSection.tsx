@@ -22,7 +22,7 @@ export function HeroSection({
   return (
     <section
       id="home"
-      className="relative h-[100vh] w-full flex flex-col items-center justify-center z-10"
+      className="relative min-h-[100vh] w-full flex flex-col items-center justify-center z-10"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => {
         xOffset.set(0);
